@@ -1,0 +1,204 @@
+{
+    "key": "group_5ad63f50b3131",
+    "title": "Site Options",
+    "fields": [
+        {
+            "key": "field_5ad6405dc9c3d",
+            "label": "Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ad6401dc9c3c",
+            "label": "Site Contact Information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Use the fields below to update the primary contact information on the PVD Young Makers.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5ad63f6cc9c37",
+            "label": "Contact Phone Number",
+            "name": "contact_phone_number",
+            "type": "text",
+            "instructions": "Enter the contact phone number for the initiative here.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad63fb8c9c38",
+            "label": "Contact Email",
+            "name": "contact_email",
+            "type": "email",
+            "instructions": "Add the primary contact email address for the initiative in this field.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5ad63fdcc9c39",
+            "label": "Partners",
+            "name": "partners",
+            "type": "repeater",
+            "instructions": "Add the partner's names and URLs to this field.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ad63ff6c9c3a",
+                    "label": "Partner Name",
+                    "name": "partner_name",
+                    "type": "text",
+                    "instructions": "Which partner is this?",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ad64008c9c3b",
+                    "label": "Partner URL",
+                    "name": "partner_url",
+                    "type": "url",
+                    "instructions": "Add a link to the partner's web presence here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5ad64083c9c3f",
+            "label": "Alert",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ad640cbc9c41",
+            "label": "Alert Active",
+            "name": "alert_active",
+            "type": "true_false",
+            "instructions": "Toggle this on to display the alert. Leave it off to hide the alert.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Alert On",
+            "ui_off_text": "Alert Off"
+        },
+        {
+            "key": "field_5ad6408dc9c40",
+            "label": "Alert Text",
+            "name": "alert_text",
+            "type": "wysiwyg",
+            "instructions": "Use this field to add text to an alert that can optionally be displayed at the top of the site! This is important for breaking news or updates, but doesn't need to be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-site-options-menus"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1523991091
+}

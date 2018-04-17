@@ -1,0 +1,322 @@
+{
+    "key": "group_5ad5f85f6e00f",
+    "title": "Home Page",
+    "fields": [
+        {
+            "key": "field_5ad5f8bf2bff4",
+            "label": "Page Hero Text",
+            "name": "page_hero_text",
+            "type": "textarea",
+            "instructions": "The text that you enter into this field will be prominently displayed at the top of the page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ad5f8f12bff5",
+            "label": "The Initiative",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ad5f95910bc0",
+            "label": "The Initiative Text",
+            "name": "the_initiative_text",
+            "type": "wysiwyg",
+            "instructions": "Use this field to fill out the content in the first module, \"The Initiative\". The text in this box defines PVD Young Makers at a high level.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5ad5f92d10bbe",
+            "label": "The Makerspaces",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ad63d0e129ac",
+            "label": "The Makerspaces Large Text",
+            "name": "the_makerspaces_large_text",
+            "type": "text",
+            "instructions": "Use this field to edit the text in the \"Makerspaces\" box. This text will show up big, bold, and at the top of the page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad63d59129ad",
+            "label": "The Makerspaces Small Text",
+            "name": "the_makerspaces_small_text",
+            "type": "text",
+            "instructions": "Use this field to edit the smaller text in the \"Makerspaces\" field. This will appear below the bigger text, defined above.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad63dd2129ae",
+            "label": "Tools",
+            "name": "tools",
+            "type": "repeater",
+            "instructions": "Add tool icons, to be displayed to the right of this module, here. These should be square PNGs.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ad63e07129af",
+                    "label": "Tool Image",
+                    "name": "tool_image",
+                    "type": "image",
+                    "instructions": "Add an icon for this tool here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ad63e2c129b0",
+                    "label": "Tool Name",
+                    "name": "tool_name",
+                    "type": "text",
+                    "instructions": "Which tool is this?",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5ad5f94410bbf",
+            "label": "The Library Locations",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ad63e41129b1",
+            "label": "The Library Locations Large Text",
+            "name": "the_library_locations_large_text",
+            "type": "text",
+            "instructions": "Use this field to edit the text in the \"Library Locations\" box. This text will show up big, bold, and at the top of the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad63e5c129b2",
+            "label": "The Library Locations Small Text",
+            "name": "the_library_locations_small_text",
+            "type": "text",
+            "instructions": "Use this field to edit the smaller text in the \"Library Locations\" module. This will appear below the bigger text, defined above.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad63e96129b3",
+            "label": "The Libraries",
+            "name": "the_libraries",
+            "type": "repeater",
+            "instructions": "Use these fields to add library locations to the right of the Library Locations module.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ad63f12129b4",
+                    "label": "Library Name",
+                    "name": "library_name",
+                    "type": "text",
+                    "instructions": "Which library is this?",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ad63f38129b5",
+                    "label": "Library Link",
+                    "name": "library_link",
+                    "type": "url",
+                    "instructions": "Where should this library's button direct users?",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1523990842
+}
