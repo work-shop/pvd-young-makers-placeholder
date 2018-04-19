@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 @font-face {
 	font-family: 'modern_pictograms_proregular';
 	src: url('../fonts/modernpictogramspro_234.eot');
@@ -44,31 +46,32 @@ body{
 //massive, huge, large, medium, regular, small
 
 h1,.h1{
-	@include text-size($text-h1);
+	//@include text-size($text-h1);
+    @include rfs( 50.5 );
 }
 
 h2,.h2{
-	@include text-size($text-h2);
+	@include rfs( 34 );
 }
 
 h3,.h3{
-	@include text-size($text-h3);
+	@include rfs( 28 );
 }
 
 h4,.h4{
-	@include text-size($text-h4);
+	@include rfs( 21 );
 }
 
 h5,.h5{
-	@include text-size($text-h5);
+	@include rfs( 18 );
 }
 
 h6,.h6{
-	@include text-size($text-h5);
+	@include rfs( 16 );
 }
 
 p{
-	@include text-size($text-h4);
+	@include rfs( 18 );
 	margin-top: 0;
 }
 
@@ -81,10 +84,12 @@ p{
 
 .italic,em{
 	font-family: $font-italic;
+    font-style: italic;
 }
 
 .font-light{
 	font-family: $font-light;
+    font-weight: lighter;
 }
 
 .uppercase{
@@ -115,22 +120,6 @@ p{
 
 //typography colors
 
-.brand{
-	color: $brand;
-}
-
-.brand-yellow{
-	color: $brand-yellow;
-}
-
-.khaki{
-	color: $khaki;
-}
-
-.slate{
-	color: $slate;
-}
-
 .white{
 	color: white;
 }
@@ -157,6 +146,34 @@ p{
 
 .dark{
 	color: $dark;
+}
+
+.brand-orange {
+    color: $brand-orange;
+}
+
+.brand-orange-light {
+    color: $brand-orange-light;
+}
+
+.brand-teal {
+    color: $brand-teal;
+}
+
+.brand-teal-dark {
+    color: $brand-teal-dark;
+}
+
+.brand-cyan {
+    color: $brand-cyan;
+}
+
+.brand-cyan-light {
+    color: $brand-cyan-light;
+}
+
+.brand-cyan-lighter {
+    color: $brand-cyan-lighter
 }
 
 

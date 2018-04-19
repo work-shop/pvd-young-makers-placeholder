@@ -24,20 +24,32 @@
 	background: $dark;
 }
 
-.bg-brand{
-	background: $brand;
+.bg-brand-orange {
+    background: $brand-orange;
 }
 
-.bg-khaki{
-	background: $khaki;
+.bg-brand-orange-light {
+    background: $brand-orange-light;
 }
 
-.bg-yellow{
-	background: $brand-yellow;
+.bg-brand-teal {
+    background: $brand-teal;
 }
 
-.bg-slate{
-	background: $slate;
+.bg-brand-teal-dark {
+    background: $brand-teal-dark;
+}
+
+.bg-brand-cyan {
+    background: $brand-cyan;
+}
+
+.bg-brand-cyan-light {
+    background: $brand-cyan-light;
+}
+
+.bg-brand-cyan-lighter {
+    background: $brand-cyan-lighter
 }
 
 
@@ -61,7 +73,7 @@
 	z-index: -1;
 	background-size: cover;
 	background-position: center top;
-	
+
 	&:after{
 		content: '';
 		display: block;
