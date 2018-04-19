@@ -31,6 +31,8 @@ const managed_files = ['js', 'scss', 'css'];
  * =================================================== */
 const bourbon_includePaths = require('node-bourbon').includePaths;
 const slick_includePaths = path.join(__dirname,'node_modules','slick-carousel', 'slick');
+const rfs_includePaths = path.join(__dirname,'node_modules','rfs', 'sass');
+const all_includePaths = [ slick_includePaths, rfs_includePaths ].concat( bourbon_includePaths );
 
 const php_entrypoint = path.join( __dirname, paths.src, '**', '*.!(' + managed_files.join('|') + ')' );
 const php_exitpoint = path.join( __dirname, paths.dest );
@@ -91,7 +93,7 @@ function sass_bundle( development ) {
 
             gulp.src( sass_entrypoint )
                 .pipe( sass({
-                    includePaths: [ slick_includePaths ].concat( bourbon_includePaths ),
+                    includePaths: all_includePaths,
                     outputStyle: ( development ) ? 'expanded' : 'compressed'
                 }).on('error', sass.logError ) )
                 .pipe( autoprefixer({
@@ -123,7 +125,7 @@ function admin_sass_bundle( development ) {
 
         gulp.src( admin_sass_entrypoint )
             .pipe( sass({
-                includePaths: [ slick_includePaths ].concat( bourbon_includePaths ),
+                includePaths: all_includePaths,
                 outputStyle: ( development ) ? 'expanded' : 'compressed'
             }).on('error', sass.logError ) )
             .pipe( autoprefixer({
