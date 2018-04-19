@@ -2,7 +2,7 @@
 
 body{
 	background-color: $body-background-color;
-	padding-top: $nav-height;	
+	padding-top: $nav-height;
 
 	@media screen and (max-width: $sm) {
 		padding-top: $nav-height-mobile;
@@ -42,7 +42,7 @@ body{
 	@media screen and (max-width: $sm) {
 		padding-left: $container-fluid-padding-mobile;
 		padding-right: $container-fluid-padding-mobile;
-	}	
+	}
 }
 
 
@@ -60,12 +60,12 @@ $text-button: (
 	display: block;
 
 	a{
-		@include text-size($text-button);	
+		@include rfs($text-button);	
 		background: $brand;
 		padding: 10px 10px;
 		font-family: $font-main;
 		color: $dark;
-		@extend .uppercase;	
+		@extend .uppercase;
 		border-radius: 2px;
 		display: inline-block;
 		text-align: center;

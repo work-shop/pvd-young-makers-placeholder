@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>
-		<?php 
+		<?php
 		if( is_front_page() ){
 			bloginfo( 'name' ); echo ' | ';  bloginfo( 'description' );
 		} else{
@@ -29,8 +29,5 @@
 
 </head>
 <body <?php body_class('loading before-scroll modal-off menu-closed dropdown-off'); ?>>
-
-	<?php get_template_part('partials/nav'); ?>
-	<?php get_template_part('partials/menus'); ?>
 
 	<main id="content">

@@ -16,12 +16,13 @@ import { scrollSpy } from './scroll-spy.js';
 import { menuToggle } from './menu-toggle.js';
 import { slickSlideshows } from './slick-slideshows.js';
 import { livereload } from './livereload-client.js';
+import { sizeLinks } from './size-links.js';
 
 livereload();
 
 loading(config.loading);
 linksNewtab(config.linksNewtab);
-viewportLabel(config.viewportLabel);
+//viewportLabel(config.viewportLabel);
 //dropdowns(config.dropdowns);
 //stickyNav(config.stickyNav);
 jumpLinks(config.jumpLinks);
@@ -29,5 +30,7 @@ modals(config.modals);
 scrollSpy(config.scrollSpy);
 menuToggle(config.menuToggle);
 slickSlideshows(config.slickSlideshows);
+
+sizeLinks();
 
 console.log('main.js loaded, with gulp!');

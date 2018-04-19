@@ -3,14 +3,14 @@
 
 .page-body-section-introduction{
 	p{
-		@include text-size($text-page-body);
+		@include rfs($text-page-body);
 	}
 }
 
 
 .wysiwyg{
 
-	@include text-size($text-page-body);
+	@include rfs($text-page-body);
 
 	*{
 		@extend .serif;

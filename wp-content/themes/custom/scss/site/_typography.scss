@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
+
 
 @font-face {
 	font-family: 'modern_pictograms_proregular';
@@ -15,7 +16,7 @@
 body{
 	font-family: $font-main;
 	font-weight: normal;
-	@include text-size($text-h4);
+	@include rfs(16);
 	color: $dark;
 }
 
@@ -48,38 +49,52 @@ body{
 h1,.h1{
 	//@include text-size($text-h1);
     @include rfs( 50.5 );
+    line-height: 1.2em;
+    font-weight: 800;
 }
 
 h2,.h2{
-	@include rfs( 34 );
+	@include rfs( 42 );
+    line-height: 1.2em;
+    font-weight: 800;
 }
 
 h3,.h3{
-	@include rfs( 28 );
+	@include rfs( 34 );
+    line-height: 1.5em;
+    font-weight: 700;
 }
 
 h4,.h4{
-	@include rfs( 21 );
+	@include rfs( 28 );
+    line-height: 1.4em;
+    font-weight: 500;
 }
 
 h5,.h5{
-	@include rfs( 18 );
+	@include rfs( 21 );
+    line-height: 1.3em;
+    font-weight: 500;
 }
 
 h6,.h6{
 	@include rfs( 16 );
+    line-height: 1.2em;
+    font-weight: 500;
 }
 
 p{
 	@include rfs( 18 );
+    line-height: 1.4em;
 	margin-top: 0;
+    font-weight: 500;
 }
 
 //formatting
 
 .bold,strong{
 	font-family: $font-bold;
-	font-weight: bold;
+	font-weight: 1000;
 }
 
 .italic,em{
@@ -152,6 +167,10 @@ p{
     color: $brand-orange;
 }
 
+.brand-orange-fill {
+    fill: $brand-orange;
+}
+
 .brand-orange-light {
     color: $brand-orange-light;
 }
@@ -163,6 +182,11 @@ p{
 .brand-teal-dark {
     color: $brand-teal-dark;
 }
+
+.brand-teal-dark-fill {
+    fill: $brand-teal-dark;
+}
+
 
 .brand-cyan {
     color: $brand-cyan;

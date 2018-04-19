@@ -11,9 +11,10 @@ $brand-orange: #E36F1E;
 $brand-orange-light: #FADCC7;
 $brand-teal-dark: #174759;
 $brand-teal: #2A5A6B;
+$brand-teal-lighter: lighten( $brand-teal, 40 );
 $brand-cyan: #3F90A7;
-$brand-cyan-light: #D9F3FB;
-$brand-cyan-lighter: #C4E0E8;
+$brand-cyan-light: #C4E0E8;
+$brand-cyan-lighter: #D9F3FB;
 
 
 //grays
@@ -46,6 +47,8 @@ $container-fluid-padding-mobile: 15px;
 $container-fluid-sum: $container-fluid-padding * 2;
 $container-fluid-sum-mobile: $container-fluid-padding-mobile * 2;
 
+// site box borders
+$border-size: 10px;
 
 //transitions
 $modal-transition: .35s;
@@ -59,7 +62,7 @@ $lg: 1199px;
 
 
 //site
-$body-background-color: white;
+$body-background-color: $brand-cyan-lighter;
 
 $font-main: 'Montserrat', Helvetica, Arial, Sans-serif;
 $font-italic: 'Montserrat', Helvetica, Arial, Sans-serif;
