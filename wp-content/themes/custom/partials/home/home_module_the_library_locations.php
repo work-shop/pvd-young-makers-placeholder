@@ -1,6 +1,6 @@
-<section class="container-fluid">
+<section class="container-fluid mb6">
     <div class="row">
-        <div class="offset-sm-1 col-sm-4 home-module">
+        <div class="offset-sm-1 col-sm-4 home-module link-sizing-reference">
 
             <div class="module-tag bg-brand-teal-dark">
                 <span class="h6 uppercase white bold">The Library Locations</h5>
@@ -13,13 +13,16 @@
         </div>
 
         <div class="col-sm-6">
-            <ul class="module-library-list module-link-list">
+            <div class="module-library-list module-link-list">
                 <?php foreach ( get_field('the_libraries', $id) as $i => $library ) : ?>
 
-                    <li class="module-library-link module-link-list-link"><a class="bold" href="<?php echo $library['library_link']; ?>" target="_blank"><?php echo $library['library_name']; ?></a></li>
+                    <a class="module-library-link module-link-list-link" href="<?php echo $library['library_link']; ?>" target="_blank">
+                        <span class="bold library-name" ><?php echo $library['library_name']; ?></span>
+                        <span class="h6 content-description">See Hours and Directions</span>
+                    </a>
 
                 <?php endforeach; ?>
-            </ul>
+            </div>
         </div>
     </div>
 </section>

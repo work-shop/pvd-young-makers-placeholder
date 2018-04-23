@@ -2,23 +2,20 @@
 
 const stride = 2;
 
-function sizeLinks() {
-    $(document).ready( function() {
-        var links = $('.module-link-list-link');
+function setLinkSizes() {
+    var links = $('.module-link-list-link');
+    var list = links.parents('.row').children('.link-sizing-reference');
+    var height_factor = 1 / Math.ceil( (links.length / stride) );
 
-        console.log( links );
-        var list = links.parents('.row');
-
-        var height_factor = 1/5;
-
-        console.log( list.borders );
-
-        links.css({
-            width: '50%',
-            height: (list.height() - 10) * height_factor
-        })
-
+    links.css({
+        width: '50%',
+        height: (list.outerHeight() - 10) * height_factor
     });
+}
+
+function sizeLinks() {
+    $(document).ready( setLinkSizes );
+    $(window).on('resize', setLinkSizes);
 }
 
 export { sizeLinks };
