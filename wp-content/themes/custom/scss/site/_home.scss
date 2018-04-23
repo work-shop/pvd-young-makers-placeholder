@@ -44,14 +44,25 @@ a {
     }
 }
 
+
+
+
 // Library Locations Module Styling
 
-.module-library-list {
+.module-link-list {
     position: relative;
     width: 100%;
     border: ($border-size / 2) solid $brand-teal-dark;
     overflow: auto;
 
+}
+
+.module-link-list-link {
+    display: inline-block;
+    text-align: center;
+    background-color: $brand-teal-lighter;
+    border: ($border-size / 2) solid $brand-teal-dark;
+    float: left;
 }
 
 .module-library-link {
@@ -98,5 +109,17 @@ a {
             transform: translateY(100%);
         }
 
+    }
+}
+
+.module-makerspace-link svg {
+    position: relative;
+    top:50%;
+
+    width: 75%;
+    transform: translateY(-50%);
+
+    .svg-icon {
+        fill: $brand-teal-dark;
     }
 }
