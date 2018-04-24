@@ -1,2 +1,30 @@
 
 /* footer */
+
+#footer {
+    background-color: $brand-teal-dark;
+    padding:2em 0em 1em 0em;
+}
+
+.footer-heading {
+    color: $brand-teal-lighter;
+}
+
+.partner-link {
+
+    margin-bottom: 1em;
+
+    .partner-url {
+        color: $brand-teal-lighter;
+
+        &:hover {
+            border-bottom: 2px solid $brand-teal-lighter;
+        }
+
+    }
+}
+
+
+.site-credit {
+    margin-top: 2em;
+}

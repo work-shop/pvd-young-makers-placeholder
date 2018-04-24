@@ -17,8 +17,8 @@
                 <?php foreach ( get_field('the_libraries', $id) as $i => $library ) : ?>
 
                     <a class="module-library-link module-link-list-link" href="<?php echo $library['library_link']; ?>" target="_blank">
-                        <span class="bold library-name" ><?php echo $library['library_name']; ?></span>
                         <span class="h6 content-description">See Hours and Directions</span>
+                        <span class="bold library-name" ><?php echo $library['library_name']; ?></span>
                     </a>
 
                 <?php endforeach; ?>

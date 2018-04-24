@@ -30,4 +30,6 @@
 </head>
 <body <?php body_class('loading before-scroll modal-off menu-closed dropdown-off'); ?>>
 
+    <?php include( locate_template('partials/modals.php') ); ?>
+
 	<main id="content">

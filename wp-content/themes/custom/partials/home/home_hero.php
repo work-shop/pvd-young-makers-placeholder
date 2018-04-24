@@ -7,7 +7,7 @@
             <?php include( locate_template('partials/logo.php') ); ?>
 
         </div>
-        <div class="col-sm-7 col-xs-10 col-md-5 col-lg-4 offset-xs-1">
+        <div class="col-sm-7 col-xs-10 col-md-5 col-lg-5 offset-xs-1">
             <h1 class="bold brand-teal-dark centered-xs">
                 <?php echo get_field( 'page_hero_text', $id ); ?>
             </h1>

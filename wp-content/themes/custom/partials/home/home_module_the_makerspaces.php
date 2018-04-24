@@ -17,7 +17,7 @@
 
 <section class="container-fluid mb6 hidden-xs">
     <div class="row">
-        <div class="offset-lg-3 offset-md-2 offset-xs-1 col-sm-5 col-lg-7 home-module link-sizing-reference">
+        <div class="offset-lg-2 offset-md-2 offset-xs-1 col-sm-5 col-lg-7 home-module link-sizing-reference">
 
             <div class="module-tag bg-brand-teal-dark">
                 <span class="h6 uppercase white bold">The Makerspaces</h5>

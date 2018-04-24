@@ -1,0 +1,110 @@
+$overlay-opacity:.85;
+
+#contact-us {
+    background-color: $brand-orange;
+    padding:3em 0em 2em 0em;
+}
+
+.contact-button {
+    border: 10px solid $brand-orange;
+    background-color: $brand-orange-light;
+    padding:1em;
+    cursor:pointer;
+
+    .contact-button-text {
+        color: $brand-orange;
+    }
+
+    &:hover {
+        background-color: lighten( $brand-orange, 20);
+
+        .contact-button-text {
+            color:white;
+        }
+
+    }
+}
+
+#contact {
+
+    position: fixed;
+    top:0;
+    left:0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255, $overlay-opacity);
+
+    transition: background-color 450ms;
+
+
+}
+
+
+
+#contact.off {
+    background-color: rgba(255,255,255,0);
+    z-index: -100;
+}
+
+#contact.on {
+
+    background-color: rgba(255,255,255, $overlay-opacity);
+    z-index: 100;
+
+}
+
+#contact .contact-element {
+    width: 80%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    padding: 2em;
+    border:$border-size solid $brand-orange;
+    background-color: $brand-orange-light;
+}
+
+#contact.off .contact-element {
+    display: none;
+}
+
+#contact.on .contact-element {
+    display: block;
+}
+
+#contact .contact-element .module-tag {
+    background-color: $brand-orange;
+}
+
+.contact-highlight-region {
+    @extend .h4;
+    @extend .bold;
+
+    border:none;
+    color:white;
+    background-color: $brand-orange;
+    padding: .5em .5em .5em .5em;
+
+}
+
+#contact form {
+
+    .gfield_input {
+        margin-bottom: 2em;
+    }
+
+    .gfield_label, .gfield_required {
+        color:$brand-orange;
+    }
+
+    .gform_button {
+        @extend .contact-highlight-region;
+
+        &:hover {
+
+        }
+    }
+
+}
