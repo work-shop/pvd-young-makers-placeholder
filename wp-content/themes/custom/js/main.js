@@ -6,30 +6,32 @@ window.$ = global.$;
 
 import { config } from './config.js';
 import { loading } from './loading.js';
-import { viewportLabel } from './viewport-label.js';
-import { linksNewtab } from './links-newtab.js';
-//import { dropdowns } from './dropdowns.js';
-//import { stickyNav } from './sticky-nav.js';
-import { jumpLinks } from './jump-links.js';
+// import { viewportLabel } from './viewport-label.js';
+// import { linksNewtab } from './links-newtab.js';
+// //import { dropdowns } from './dropdowns.js';
+// //import { stickyNav } from './sticky-nav.js';
+// import { jumpLinks } from './jump-links.js';
 import { modals } from './modals.js';
-import { scrollSpy } from './scroll-spy.js';
-import { menuToggle } from './menu-toggle.js';
-import { slickSlideshows } from './slick-slideshows.js';
+// import { scrollSpy } from './scroll-spy.js';
+// import { menuToggle } from './menu-toggle.js';
+// import { slickSlideshows } from './slick-slideshows.js';
 import { livereload } from './livereload-client.js';
 import { sizeLinks } from './size-links.js';
+import { submitModalState } from './submit-modal-state.js';
 
 livereload();
 
 loading(config.loading);
-linksNewtab(config.linksNewtab);
+//linksNewtab(config.linksNewtab);
 //viewportLabel(config.viewportLabel);
 //dropdowns(config.dropdowns);
 //stickyNav(config.stickyNav);
-jumpLinks(config.jumpLinks);
+//jumpLinks(config.jumpLinks);
 modals(config.modals);
-scrollSpy(config.scrollSpy);
-menuToggle(config.menuToggle);
-slickSlideshows(config.slickSlideshows);
+//scrollSpy(config.scrollSpy);
+//menuToggle(config.menuToggle);
+//slickSlideshows(config.slickSlideshows);
+submitModalState( config.submitModalState );
 
 sizeLinks();
 

@@ -1,16 +1,20 @@
 
 
-<div id="contact" class="modal modal-target off modal-toggle" data-modal-target="contact">
+<div id="contact" class="modal off blanket">
     <section class="contact-element container">
 
         <div class="module-tag">
             <span class="h6 uppercase white bold">Contact Us!</h5>
         </div>
 
+        <div class="module-tag-right modal-close" data-modal-target="contact">
+            <span class="h6 uppercase brand-orange bold">Close</h5>
+        </div>
+
         <div class="row">
             <div class="contact-form col-sm-6">
 
-                <?php gravity_form( 1, false, false, false, null, true ); ?>
+                <?php gravity_form( 1, false, false, false, null, false ); ?>
 
             </div>
             <div class="contact-info col-sm-6">

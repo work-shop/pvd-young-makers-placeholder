@@ -15,24 +15,28 @@ function modals( config ) {
 
 		$( '.' + modalProperties.modalCloseClass ).click(function(e){
 			e.preventDefault();
-			closeModal();	
+			closeModal();
 		});
 
 		$('.blanket').click(function(e){
 			e.preventDefault();
-			closeModal();	
-		});			
+			closeModal();
+		});
+
+	    $('.blanket').find('*').click( function( e ) {
+            e.stopPropagation();
+        });
 
 		$( '.' + modalProperties.modalToggleClass ).click(function(e){
 			e.preventDefault();
 			var target = $(this).data('modal-target');
-			modalToggle(target, false);	
+			modalToggle(target, false);
 		});
 
 		$('.modal-swap').click(function(e){
 			e.preventDefault();
 			var target = $(this).data('modal-target');
-			modalToggle(target,true);	
+			modalToggle(target,true);
 		});
 
 	});
@@ -53,7 +57,7 @@ function modalToggle(_target, swap){
 		if( $('body').hasClass( modalProperties.modalOffBodyClass ) ){
 			$(modalTarget).removeClass('off').addClass('on');
 			$('body').removeClass( modalProperties.modalOffBodyClass ).addClass( modalProperties.modalOnBodyClass );
-		}	
+		}
 	}
 
 }

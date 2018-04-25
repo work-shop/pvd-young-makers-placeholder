@@ -44,8 +44,24 @@ a {
     }
 }
 
+.module-tag-right {
+    position: absolute;
+    right: -$border-size;
+    top:0;
+
+    background-color: transparent;
+    display: inline-block;
+    padding: 1em;
+
+    transform: translateY( calc( -100% - #{$border-size}) );
+}
 
 
+// The Initiative Styling
+
+.initiative-container p a {
+    @extend .bold;
+}
 
 // Library Locations Module Styling
 

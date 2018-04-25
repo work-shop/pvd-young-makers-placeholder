@@ -12,6 +12,7 @@ class WS_Site {
         add_action('wp_enqueue_scripts', array( $this, 'enqueue_scripts_and_styles' ) );
 
         add_filter('show_admin_bar', '__return_false');
+        add_filter( 'gform_confirmation_anchor', '__return_true' );
 
         new WS_CDN_Url();
 

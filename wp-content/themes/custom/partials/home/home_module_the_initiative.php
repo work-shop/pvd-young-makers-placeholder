@@ -1,4 +1,4 @@
-<section class="container-fluid mb6">
+<section class="initiative-container container-fluid mb6">
     <div class="row">
         <div class="offset-sm-1 col-sm-7 home-module">
 
