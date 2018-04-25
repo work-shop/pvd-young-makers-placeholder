@@ -1,6 +1,10 @@
 
 /* home page */
 
+.border-brand-teal {
+    border: $border-size solid $brand-teal-dark;
+}
+
 // General Module Styling
 
 .home-module {
@@ -140,5 +144,19 @@ a {
 
     .svg-icon {
         fill: $brand-teal-dark;
+    }
+}
+
+@include query( $xs ) {
+    .module-library-list {
+        position: relative;
+        top:-$border-size;
+    }
+}
+
+@include query( $sm ) {
+    .module-library-list {
+        position: relative;
+        top:-$border-size;
     }
 }

@@ -1,0 +1,33 @@
+$sizing: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $md
+);
+
+$display-modes: (
+    visible: block,
+    hidden: none,
+    inline: inline,
+    inline-block: inline-block
+    );
+
+@each $display-mode-classname, $display-mode in $display-modes {
+
+    .#{$display-mode-classname} {
+        display: #{$display-mode};
+    }
+
+    @each $breakpoint, $breakpoint-value in $sizing {
+
+        @include query( $breakpoint-value ) {
+
+            .#{$display-mode-classname}-#{$breakpoint} {
+                display:#{$display-mode};
+            }
+
+        }
+
+    }
+
+}

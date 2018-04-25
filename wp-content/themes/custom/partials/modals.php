@@ -7,7 +7,7 @@
             <span class="h6 uppercase white bold">Contact Us!</h5>
         </div>
 
-        <div class="module-tag-right modal-close" data-modal-target="contact">
+        <div class="module-tag-right modal-swap" data-modal-target="contact">
             <span class="h6 uppercase brand-orange bold">Close</h5>
         </div>
 

@@ -5,3 +5,9 @@
 @mixin transform( $properties ) {
     transform: $properties;
 }
+
+@mixin query( $size ) {
+    @media screen and (max-width: #{$size}) {
+        @content;
+    }
+}

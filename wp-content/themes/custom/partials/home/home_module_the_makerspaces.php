@@ -15,21 +15,21 @@
 
 ?>
 
-<section class="container-fluid mb6 hidden-xs">
+<section class="container-fluid mb6">
     <div class="row">
-        <div class="offset-lg-2 offset-md-2 offset-xs-1 col-sm-5 col-lg-7 home-module link-sizing-reference">
+        <div class="offset-xs-0 col-xs-12   offset-sm-1 col-sm-10   offset-md-2 col-md-7    link-sizing-reference">
+            <div class="home-module">
+                <div class="module-tag bg-brand-teal-dark">
+                    <span class="h6 uppercase white bold">The Makerspaces</h5>
+                </div>
 
-            <div class="module-tag bg-brand-teal-dark">
-                <span class="h6 uppercase white bold">The Makerspaces</h5>
+                <h3 class="brand-teal-dark mb1"><?php the_field('the_makerspaces_large_text', $id); ?></h3>
+
+                <h5 class="brand-teal-dark"><?php the_field('the_makerspaces_small_text', $id); ?></h5>
             </div>
-
-            <h3 class="brand-teal-dark mb1"><?php the_field('the_makerspaces_large_text', $id); ?></h3>
-
-            <h5 class="brand-teal-dark"><?php the_field('the_makerspaces_small_text', $id); ?></h5>
-
         </div>
 
-        <div class="col-sm-2">
+        <div class="col-sm-2 hidden-xs hidden-sm module-list-shift">
             <div class="module-library-list module-link-list">
                 <?php foreach ( $icons as $i => $url ) : ?>
 

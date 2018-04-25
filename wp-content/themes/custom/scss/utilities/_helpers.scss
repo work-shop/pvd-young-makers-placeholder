@@ -43,6 +43,8 @@
 	display: none !important;
 }
 
+
+
 .clearfix{
   &:before,
   &:after {
@@ -103,7 +105,7 @@
 	@media screen and (max-width: $xs) {
 		background: white;
 		color: #333;
-	}	
+	}
 
 	#viewport-label-size:before{
 		font-size: 17px;
@@ -127,10 +129,9 @@
 		@media screen and (max-width: $xs) {
 			content: 'xs';
 			color: #333;
-		}				
+		}
 	}
 }
-
 
 //visualize container-fluid extents
 // body:after{

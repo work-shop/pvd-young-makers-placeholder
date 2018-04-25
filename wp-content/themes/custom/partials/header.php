@@ -33,4 +33,6 @@
 
     <?php include( locate_template('partials/modals.php') ); ?>
 
+    <?php include( locate_template('partials/background.php') ); ?>
+
 	<main id="content">

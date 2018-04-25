@@ -1,6 +1,7 @@
 'use strict';
 
-const breakpt = 1000;
+const breakpt_md = 991;
+const breakpt_sm = 767;
 
 function setLibraryLinkSizes() {
     const stride = 2;
@@ -23,7 +24,7 @@ function setMakerspaceLinkSizes() {
     var list = links.parents('.row').children('.link-sizing-reference');
 
 
-    var height_factor = 1 / Math.ceil( (links.length / ((( window.innerWidth < breakpt ) ? 0.5 : 1) * stride) ) );
+    var height_factor = 1 / Math.ceil( (links.length / ((( window.innerWidth < breakpt_md ) ? 0.5 : 1) * stride) ) );
 
     const height = (list.outerHeight() - 10) * height_factor;
 
