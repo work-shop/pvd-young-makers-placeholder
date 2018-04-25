@@ -37,6 +37,8 @@ $overlay-opacity:.85;
 
     transition: background-color 450ms;
 
+    overflow: scroll;
+
 
 }
 
@@ -64,6 +66,13 @@ $overlay-opacity:.85;
     padding: 2em;
     border:$border-size solid $brand-orange;
     background-color: $brand-orange-light;
+}
+
+@include query( $xs ) {
+    #contact .contact-element {
+        top:10%;
+        transform:translate(-50%,0%);
+    }
 }
 
 #contact.off .contact-element {
