@@ -1,5 +1,5 @@
-<section id="contact-us" class="contact container-fluid">
-    <div class="row">
+<section id="contact-us" class="container-fluid">
+    <div class="">
         <div class="col-xs-10 offset-xs-1 centered">
             <h2 class="white">Full Website and Press Release Coming Soon</h2>
         </div>

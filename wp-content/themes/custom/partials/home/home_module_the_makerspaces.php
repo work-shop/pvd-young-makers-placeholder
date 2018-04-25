@@ -9,7 +9,8 @@
             'icon-laser-cutter.php',
             'icon-sewing-machine.php',
             'icon-soldering-iron.php',
-            'icon-vinyl-cutter.php'
+            'icon-vinyl-cutter.php',
+            'icon-3d-printer.php',
         )
     );
 

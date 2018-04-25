@@ -25,7 +25,19 @@
                 </div>
 			</div>
 			<div class="col-md-3 col-xs-12 footer-col">
-
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5 class="footer-heading bold uppercase brand-teal-lighter mb2">Contact Us</h5>
+                    </div>
+                    <div class="col-sm-12">
+                        <h6 class="footer-heading tiny bold uppercase brand-teal-lighter mb1">Phone<span class="ml1"><?php echo get_field('contact_phone_number', 'option'); ?></span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                        <h6 class="footer-heading tiny bold uppercase brand-teal-lighter mb1">Email<span class="ml1"><?php echo get_field('contact_email', 'option'); ?></span></h5>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
 			</div>
 		</div>
 
