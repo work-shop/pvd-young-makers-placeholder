@@ -57,6 +57,44 @@
             "delay": 0
         },
         {
+            "key": "field_5ae235b899e05",
+            "label": "Quotation",
+            "name": "quotation",
+            "type": "textarea",
+            "instructions": "Update the quotation from the Mayor here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ae235e399e06",
+            "label": "Mayor's Name",
+            "name": "mayors_name",
+            "type": "text",
+            "instructions": "Enter the Mayor's name here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ad5f92d10bbe",
             "label": "The Makerspaces",
             "name": "",
@@ -318,5 +356,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1523990842
+    "modified": 1524774379
 }

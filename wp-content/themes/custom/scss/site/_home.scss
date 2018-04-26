@@ -11,7 +11,7 @@
     position: relative;
     background-color: $brand-cyan-light;
     border: $border-size solid $brand-teal-dark;
-    padding: 2em;
+    padding: 1em;
 
     p {
         font-family: $font-main;
@@ -33,7 +33,7 @@
 
     background-color: $brand-teal-dark;
     display: inline-block;
-    padding: 1em;
+    padding: 1.5em;
 
     transform: translateY( calc( -100% - #{$border-size}) );
 }
@@ -60,6 +60,37 @@ a {
     transform: translateY( calc( -100% - #{$border-size}) );
 }
 
+// mayor's quotation styling
+
+.home-module.mayors-quotation {
+    background-color: $brand-orange-light;
+    border: $border-size solid $brand-orange;
+
+    .quote-text {
+        color: $brand-orange;
+        position: relative;
+        z-index: 5;
+    }
+
+    .mayors-name {
+        color: $brand-orange;
+        text-align: right;
+    }
+
+}
+
+.quote-mark {
+    position: absolute;
+    @include rfs( 60 );
+    color: white;
+
+
+    &.open-quote {
+        top:0%;
+        left:0%;
+    }
+
+}
 
 // The Initiative Styling
 
@@ -148,14 +179,14 @@ a {
 }
 
 @include query( $xs ) {
-    .module-library-list {
+    .module-library-list, .mayors-quotation {
         position: relative;
         top:-$border-size;
     }
 }
 
 @include query( $sm ) {
-    .module-library-list {
+    .module-library-list, .mayors-quotation {
         position: relative;
         top:-$border-size;
     }
