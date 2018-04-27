@@ -1,4 +1,4 @@
-<section class="container-fluid mb6">
+<section class="container-fluid mb8">
     <div class="row">
         <div class="offset-sm-1 col-sm-10   col-md-4  link-sizing-reference">
             <div class="home-module">

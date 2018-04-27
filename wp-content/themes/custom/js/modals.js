@@ -28,6 +28,7 @@ function modals( config ) {
         });
 
 		$( '.' + modalProperties.modalToggleClass ).click(function(e){
+
 			e.preventDefault();
 			var target = $(this).data('modal-target');
 			modalToggle(target, false);
@@ -55,9 +56,14 @@ function modalToggle(_target, swap){
 	else{
 		console.log('else');
 		if( $('body').hasClass( modalProperties.modalOffBodyClass ) ){
+            console.log('elseif modal-off-class');
 			$(modalTarget).removeClass('off').addClass('on');
 			$('body').removeClass( modalProperties.modalOffBodyClass ).addClass( modalProperties.modalOnBodyClass );
-		}
+		} else {
+            console.log('elseif modal-on-class');
+            $(modalTarget).removeClass('on').addClass('off');
+			$('body').removeClass( modalProperties.modalOnBodyClass ).addClass( modalProperties.modalOffBodyClass );
+        }
 	}
 
 }

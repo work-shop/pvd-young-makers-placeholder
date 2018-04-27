@@ -7,8 +7,8 @@
             <span class="h6 uppercase white bold">Contact Us!</h5>
         </div>
 
-        <div class="module-tag-right modal-swap" data-modal-target="contact">
-            <span class="h6 uppercase brand-orange bold">Close</h5>
+        <div class="module-tag-right modal-toggle" data-modal-target="contact">
+            <span class="h6 uppercase brand-orange bold modal-toggle modal-close-button" data-modal-target="contact">Close</span>
         </div>
 
         <div class="row">
@@ -23,6 +23,7 @@
                 <div class="mb2"><span class="h5 phone contact-highlight-region mb2"><?php echo get_field('contact_phone_number', 'option'); ?></span></div>
                 <div class="mb2"><span class="h6 email contact-highlight-region mb2"><?php echo get_field('contact_email', 'option'); ?></span></div>
                 <p class="tiny brand-orange">Call or visit Providence Public Library or your local Providence Community Library for even more information.</p>
+                <p class="tiny brand-orange">You can also contact the Mayor's Center for City Services (MCCS) at Providence City Hall, Monday through Friday from 8:30am to 4:30pm by dialing 3-1-1.</p>
             </div>
 
         </div>

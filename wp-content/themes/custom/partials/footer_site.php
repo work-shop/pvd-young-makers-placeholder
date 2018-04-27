@@ -4,8 +4,8 @@
 
 <footer id="footer" class="block">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-7 offset-sm-1 col-xs-12 footer-col">
+		<div class="row ">
+			<div class="col-sm-7 offset-sm-1 offset-xs-1 col-xs-10 footer-col mb2">
                 <div class="row">
                     <div class="col-sm-12">
                         <h5 class="footer-heading bold uppercase brand-teal-lighter mb2">Partners</h5>
@@ -24,16 +24,16 @@
                     </div>
                 </div>
 			</div>
-			<div class="col-md-3 col-xs-12 footer-col">
+			<div class="offset-lg-0 col-lg-3 offset-xs-1 col-xs-10 footer-col">
                 <div class="row">
                     <div class="col-sm-12">
                         <h5 class="footer-heading bold uppercase brand-teal-lighter mb2">Contact Us</h5>
                     </div>
                     <div class="col-sm-12">
-                        <h6 class="footer-heading tiny bold uppercase brand-teal-lighter mb1">Phone<span class="ml1"><?php echo get_field('contact_phone_number', 'option'); ?></span></h5>
+                        <h6 class="footer-heading tiny bold uppercase brand-teal-lighter mb1"><span class="bold uppercase">Phone</span><span class="ml1"><?php echo get_field('contact_phone_number', 'option'); ?></span></h5>
                     </div>
                     <div class="col-sm-12">
-                        <h6 class="footer-heading tiny bold uppercase brand-teal-lighter mb1">Email<span class="ml1"><?php echo get_field('contact_email', 'option'); ?></span></h5>
+                        <h6 class="footer-heading tiny bold brand-teal-lighter mb1"><span class="bold uppercase">Email</span><span class="ml1"><?php echo get_field('contact_email', 'option'); ?></span></h5>
                     </div>
                 </div>
                 <div class="row">

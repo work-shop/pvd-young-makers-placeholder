@@ -117,3 +117,8 @@ $overlay-opacity:.85;
     }
 
 }
+
+#contact .modal-close-button:hover {
+    border-bottom: 2px solid $brand-orange;
+    cursor: pointer;
+}
