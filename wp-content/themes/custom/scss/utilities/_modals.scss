@@ -32,6 +32,18 @@
 	}
 }
 
+@include query( $xs ) {
+    .contact-info .email {
+        display:none;
+    }
+}
+
+.contact-info .phone a {
+    border-bottom: none;
+    color:white;
+}
+
+
 #modal-close{
 	position: fixed;
 	top: 20px;

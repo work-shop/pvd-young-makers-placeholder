@@ -70,7 +70,7 @@ $overlay-opacity:.85;
 
 @include query( $xs ) {
     #contact .contact-element {
-        top:10%;
+        top:20%;
         transform:translate(-50%,0%);
     }
 }
