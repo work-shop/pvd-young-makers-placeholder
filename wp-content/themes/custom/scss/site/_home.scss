@@ -5,6 +5,18 @@
     border: $border-size solid $brand-teal-dark;
 }
 
+@include query( $sm ) {
+    .home-callout-text {
+        text-align: center;
+    }
+}
+
+@include query( $xs ) {
+    .home-callout-text {
+        text-align: center;
+    }
+}
+
 // General Module Styling
 
 .home-module {
