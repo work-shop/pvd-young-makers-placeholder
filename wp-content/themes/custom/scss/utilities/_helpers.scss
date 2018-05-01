@@ -133,6 +133,11 @@
 	}
 }
 
+.work-shop-link:hover {
+    color:$work-shop-color;
+    border-bottom:2px solid $work-shop-color;
+}
+
 //visualize container-fluid extents
 // body:after{
 // 	content: '';

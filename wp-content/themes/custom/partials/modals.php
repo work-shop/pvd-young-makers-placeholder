@@ -14,12 +14,12 @@
         </div>
 
         <div class="row">
-            <div class="contact-form col-sm-6">
+            <div class="contact-form col-md-6 mb2">
 
                 <?php gravity_form( 1, false, false, false, null, false ); ?>
 
             </div>
-            <div class="contact-info col-sm-6">
+            <div class="contact-info col-md-6 mb2">
                 <h5 class="uppercase bold brand-orange mb1">CONTACT BY PHONE</h5>
                 <p class="brand-orange mb2">We’re available by phone or email from  9am to 5pm. Ask about PVD Young Makers when you call!</p>
                 <div class="mb2"><span class="h5 phone contact-highlight-region mb2"><a href="tel:<?php echo $phone_safe; ?>"><?php echo get_field('contact_phone_number', 'option'); ?></a></span></div>
